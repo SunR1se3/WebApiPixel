@@ -1,0 +1,12 @@
+F:\WebApiPixel\WebApiPixel.Domain\bin\Debug\net6.0\WebApiPixel.Domain.deps.json
+F:\WebApiPixel\WebApiPixel.Domain\bin\Debug\net6.0\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Domain\bin\Debug\net6.0\ref\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Domain\bin\Debug\net6.0\WebApiPixel.Domain.pdb
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.AssemblyInfoInputs.cache
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.AssemblyInfo.cs
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.csproj.CoreCompileInputs.cache
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\ref\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.pdb
+F:\WebApiPixel\WebApiPixel.Domain\obj\Debug\net6.0\WebApiPixel.Domain.csproj.AssemblyReference.cache

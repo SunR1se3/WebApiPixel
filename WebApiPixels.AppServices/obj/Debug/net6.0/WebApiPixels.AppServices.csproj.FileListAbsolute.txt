@@ -1,0 +1,15 @@
+F:\WebApiPixel\WebApiPixels.AppServices\bin\Debug\net6.0\WebApiPixels.AppServices.deps.json
+F:\WebApiPixel\WebApiPixels.AppServices\bin\Debug\net6.0\WebApiPixels.AppServices.dll
+F:\WebApiPixel\WebApiPixels.AppServices\bin\Debug\net6.0\ref\WebApiPixels.AppServices.dll
+F:\WebApiPixel\WebApiPixels.AppServices\bin\Debug\net6.0\WebApiPixels.AppServices.pdb
+F:\WebApiPixel\WebApiPixels.AppServices\bin\Debug\net6.0\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixels.AppServices\bin\Debug\net6.0\WebApiPixel.Domain.pdb
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.csproj.AssemblyReference.cache
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.AssemblyInfoInputs.cache
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.AssemblyInfo.cs
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.csproj.CoreCompileInputs.cache
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.csproj.CopyComplete
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.dll
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\ref\WebApiPixels.AppServices.dll
+F:\WebApiPixel\WebApiPixels.AppServices\obj\Debug\net6.0\WebApiPixels.AppServices.pdb

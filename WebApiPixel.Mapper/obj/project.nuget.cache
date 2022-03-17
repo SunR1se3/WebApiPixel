@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "q+IRqTFMdmm7faENWFIm33m4z9Qsk8rOo4N5UabiTj1+scD+iY3gZy9vNj03zjT2dQRHcpuiz8qGmNco8KsUng==",
+  "success": true,
+  "projectFilePath": "F:\\WebApiPixel\\WebApiPixel.Mapper\\WebApiPixel.Mapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sevg3\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

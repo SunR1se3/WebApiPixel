@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "WebApiPixel.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebApiPixel.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApiPixel.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApiPixel.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebApiPixel.Domain/WebApiPixel.Domain.csproj",
+      "msbuildProject": "../WebApiPixel.Domain/WebApiPixel.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "WebApiPixel.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sevg3\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.AppServices\\WebApiPixel.AppServices.csproj",
+      "projectName": "WebApiPixel.AppServices",
+      "projectPath": "F:\\WebApiPixel\\WebApiPixel.AppServices\\WebApiPixel.AppServices.csproj",
+      "packagesPath": "C:\\Users\\sevg3\\.nuget\\packages\\",
+      "outputPath": "F:\\WebApiPixel\\WebApiPixel.AppServices\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\sevg3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
+              "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

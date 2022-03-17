@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "870c4395-0497-4444-b380-c5f37d76a72c": {
+      "ProjectGuid": "870c4395-0497-4444-b380-c5f37d76a72c",
+      "DisplayName": "WebApiPixel.Infrastructure",
+      "ColorIndex": 0
+    },
+    "a8cb6fb2-5817-4534-b365-7a2a753ddf72": {
+      "ProjectGuid": "a8cb6fb2-5817-4534-b365-7a2a753ddf72",
+      "DisplayName": "WebApiPixel.DataAccess",
+      "ColorIndex": 1
+    },
+    "2181a8c9-5618-49d3-b45b-12d4bda9ba26": {
+      "ProjectGuid": "2181a8c9-5618-49d3-b45b-12d4bda9ba26",
+      "DisplayName": "WebApiPixel.Domain",
+      "ColorIndex": 2
+    },
+    "4b14af70-5bbd-46cd-8361-6bcf767757cf": {
+      "ProjectGuid": "4b14af70-5bbd-46cd-8361-6bcf767757cf",
+      "DisplayName": "WebApiPixel",
+      "ColorIndex": 3
+    },
+    "4d683449-5a8d-44f1-bf2c-e0255f8475be": {
+      "ProjectGuid": "4d683449-5a8d-44f1-bf2c-e0255f8475be",
+      "DisplayName": "WebApiPixel.AppServices",
+      "ColorIndex": 4
+    },
+    "12c9ba14-919c-4189-95e7-bf8a652fcb16": {
+      "ProjectGuid": "12c9ba14-919c-4189-95e7-bf8a652fcb16",
+      "DisplayName": "WebApiPixel.Migrations",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

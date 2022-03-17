@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebApiPixels.AppServices/1.0.0": {
+        "dependencies": {
+          "WebApiPixel.Domain": "1.0.0"
+        },
+        "runtime": {
+          "WebApiPixels.AppServices.dll": {}
+        }
+      },
+      "WebApiPixel.Domain/1.0.0": {
+        "runtime": {
+          "WebApiPixel.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApiPixels.AppServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApiPixel.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

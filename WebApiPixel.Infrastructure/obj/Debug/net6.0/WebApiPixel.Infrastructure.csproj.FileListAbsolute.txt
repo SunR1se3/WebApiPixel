@@ -1,0 +1,12 @@
+F:\WebApiPixel\WebApiPixel.Infrastructure\bin\Debug\net6.0\WebApiPixel.Infrastructure.deps.json
+F:\WebApiPixel\WebApiPixel.Infrastructure\bin\Debug\net6.0\WebApiPixel.Infrastructure.dll
+F:\WebApiPixel\WebApiPixel.Infrastructure\bin\Debug\net6.0\ref\WebApiPixel.Infrastructure.dll
+F:\WebApiPixel\WebApiPixel.Infrastructure\bin\Debug\net6.0\WebApiPixel.Infrastructure.pdb
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.csproj.AssemblyReference.cache
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.AssemblyInfoInputs.cache
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.AssemblyInfo.cs
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.csproj.CoreCompileInputs.cache
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.dll
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\ref\WebApiPixel.Infrastructure.dll
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.pdb
