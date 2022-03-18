@@ -1,0 +1,17 @@
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Mapper.deps.json
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Mapper.dll
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\ref\WebApiPixel.Mapper.dll
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Mapper.pdb
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Contracts.dll
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Contracts.pdb
+F:\WebApiPixel\WebApiPixel.Mapper\bin\Debug\net6.0\WebApiPixel.Domain.pdb
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.csproj.AssemblyReference.cache
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.AssemblyInfoInputs.cache
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.AssemblyInfo.cs
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.csproj.CoreCompileInputs.cache
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.csproj.CopyComplete
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.dll
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\ref\WebApiPixel.Mapper.dll
+F:\WebApiPixel\WebApiPixel.Mapper\obj\Debug\net6.0\WebApiPixel.Mapper.pdb

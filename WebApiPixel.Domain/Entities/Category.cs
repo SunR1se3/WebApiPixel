@@ -7,6 +7,9 @@ using WebApiPixel.Domain.Entities.Base;
 
 namespace WebApiPixel.Domain.Entities
 {
+    /// <summary>
+    /// Категория
+    /// </summary>
     public class Category : EntityBase
     {
         /// <summary>

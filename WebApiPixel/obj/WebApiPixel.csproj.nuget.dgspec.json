@@ -32,6 +32,80 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj"
+              },
+              "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
+              },
+              "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj",
+        "projectName": "WebApiPixel.Contracts",
+        "projectPath": "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj",
+        "packagesPath": "C:\\Users\\sevg3\\.nuget\\packages\\",
+        "outputPath": "F:\\WebApiPixel\\WebApiPixel.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sevg3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
               "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
                 "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
               }
@@ -47,6 +121,78 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\WebApiPixel\\WebApiPixel.DataAccess\\WebApiPixel.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.DataAccess\\WebApiPixel.DataAccess.csproj",
+        "projectName": "WebApiPixel.DataAccess",
+        "projectPath": "F:\\WebApiPixel\\WebApiPixel.DataAccess\\WebApiPixel.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\sevg3\\.nuget\\packages\\",
+        "outputPath": "F:\\WebApiPixel\\WebApiPixel.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sevg3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -188,6 +334,77 @@
         }
       }
     },
+    "F:\\WebApiPixel\\WebApiPixel.Mapper\\WebApiPixel.Mapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.Mapper\\WebApiPixel.Mapper.csproj",
+        "projectName": "WebApiPixel.Mapper",
+        "projectPath": "F:\\WebApiPixel\\WebApiPixel.Mapper\\WebApiPixel.Mapper.csproj",
+        "packagesPath": "C:\\Users\\sevg3\\.nuget\\packages\\",
+        "outputPath": "F:\\WebApiPixel\\WebApiPixel.Mapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sevg3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj"
+              },
+              "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\WebApiPixel\\WebApiPixel\\WebApiPixel.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -219,8 +436,14 @@
               "F:\\WebApiPixel\\WebApiPixel.AppServices\\WebApiPixel.AppServices.csproj": {
                 "projectPath": "F:\\WebApiPixel\\WebApiPixel.AppServices\\WebApiPixel.AppServices.csproj"
               },
+              "F:\\WebApiPixel\\WebApiPixel.DataAccess\\WebApiPixel.DataAccess.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.DataAccess\\WebApiPixel.DataAccess.csproj"
+              },
               "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj": {
                 "projectPath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj"
+              },
+              "F:\\WebApiPixel\\WebApiPixel.Mapper\\WebApiPixel.Mapper.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Mapper\\WebApiPixel.Mapper.csproj"
               }
             }
           }
@@ -235,9 +458,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

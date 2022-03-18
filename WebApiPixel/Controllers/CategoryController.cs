@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApiPixel.Domain.Entities;
 using WebApiPixel.AppServices.Services;
+using WebApiPixel.Contracts.Category;
 
 namespace WebApiPixel.Controllers
 {
@@ -27,7 +28,8 @@ namespace WebApiPixel.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(_categoryService.GetCategories());
+            var result = await _categoryService.GetCategories();
+            return Ok(result);
         }
 
         /// <summary>
@@ -36,10 +38,10 @@ namespace WebApiPixel.Controllers
         /// <param name="model">Модель категории</param>
         /// <returns>Успех/неудачу добавления</returns>
         [HttpPost]
-        public async Task<IActionResult> Add([FromQuery] Category model)
+        public async Task<IActionResult> Add([FromQuery] CategoryDto model)
         {
-            var result = _categoryService.Add(model);
-            return Ok(result.ToString());
+            await _categoryService.AddAsync(model);
+            return Created(String.Empty, null);
         }
 
         /// <summary>
@@ -48,9 +50,9 @@ namespace WebApiPixel.Controllers
         /// <param name="model">Модель категороии</param>
         /// <returns>Успех/неудачу редактирования</returns>
         [HttpPut]
-        public async Task<IActionResult> Update([FromQuery] Category model)
+        public async Task<IActionResult> Update([FromQuery] CategoryDto model)
         {
-            var result = _categoryService.Update(model);
+            var result = await _categoryService.UpdateAsync(model);
             return Ok(result.ToString());
         }
 
@@ -62,8 +64,8 @@ namespace WebApiPixel.Controllers
         [HttpDelete]
         public async Task<IActionResult> Remove([FromQuery] Guid id)
         {
-            var result = _categoryService.Remove(id);
-            return Ok(result.ToString());
+            await _categoryService.RemoveAsync(id);
+            return Ok();
         }
     }
 }

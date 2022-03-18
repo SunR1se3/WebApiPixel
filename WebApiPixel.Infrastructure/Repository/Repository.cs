@@ -19,37 +19,49 @@ namespace WebApiPixel.Infrastructure.Repository
             DbSet = DbContext.Set<TEntity>();
         }
 
-        public Task Add(TEntity model)
+        public async Task AddAsync(TEntity model)
         {
-            DbSet.AddAsync(model);
-            return SaveChanges();
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+            await DbSet.AddAsync(model);
+            await SaveChangesAsync();
         }
 
-        public Task<List<TEntity>> GetAll()
+        public IQueryable<TEntity> GetAll()
         {
-            return DbSet.ToListAsync();
+            return DbSet;
         }
 
-        public ValueTask<TEntity> GetById(Guid id)
+        public async ValueTask<TEntity> GetByIdAsync(Guid id)
         {
-            return DbSet.FindAsync(id);
+            return await DbSet.FindAsync(id);
         }
 
-        public Task Remove(TEntity model)
+        public async Task RemoveAsync(TEntity model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
             DbSet.Remove(model);
-            return SaveChanges();
+            await SaveChangesAsync();
         }
 
-        public Task SaveChanges()
+        public async Task SaveChangesAsync()
         {
-            return DbContext.SaveChangesAsync();
+            await DbContext.SaveChangesAsync();
         }
 
-        public Task Update(TEntity model)
+        public async Task UpdateAsync(TEntity model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
             DbSet.Update(model);
-            return SaveChanges();
+            await SaveChangesAsync();
         }
     }
 }

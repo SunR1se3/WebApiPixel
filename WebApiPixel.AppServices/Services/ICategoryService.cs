@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApiPixel.Contracts.Category;
 using WebApiPixel.Domain.Entities;
 
 namespace WebApiPixel.AppServices.Services
@@ -16,27 +17,27 @@ namespace WebApiPixel.AppServices.Services
         ///  Получает список всех категорий
         /// </summary>
         /// <returns>Список всех категорий</returns>
-        List<Category> GetCategories();
+        Task<List<CategoryDto>> GetCategories();
 
         /// <summary>
         /// Добавляет категорию
         /// </summary>
         /// <param name="model">Модель категории</param>
         /// <returns>Успех/неудача добавления</returns>
-        bool Add(Category model);
+        Task AddAsync(CategoryDto model);
 
         /// <summary>
         /// Удаляет категорию
         /// </summary>
         /// <param name="id">id категории</param>
         /// <returns>Успех/неудачу удаления</returns>
-        bool Remove(Guid id);
+        Task RemoveAsync(Guid id);
 
         /// <summary>
         /// Редактирует текущую категорию
         /// </summary>
         /// <param name="model">Модель категории</param>
         /// <returns>Обновленную модель</returns>
-        Category Update(Category model);
+        Task<CategoryDto> UpdateAsync(CategoryDto model);
     }
 }

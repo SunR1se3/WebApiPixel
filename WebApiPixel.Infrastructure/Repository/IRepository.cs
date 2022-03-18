@@ -17,41 +17,41 @@ namespace WebApiPixel.Infrastructure.Repository
         /// Возвращает все записи
         /// </summary>
         /// <returns></returns>
-        Task<List<TEntity>> GetAll();
+        IQueryable<TEntity> GetAll();
 
         /// <summary>
         /// Возвращает по id
         /// </summary>
         /// <param name="id">Уникальный номер</param>
         /// <returns></returns>
-        ValueTask<TEntity> GetById(Guid id);
+        ValueTask<TEntity> GetByIdAsync(Guid id);
 
         /// <summary>
         /// Добавляет запись
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-        Task Add(TEntity model);
+        Task AddAsync(TEntity model);
 
         /// <summary>
         /// Обновляет запись
         /// </summary>
         /// <param name="model">Модель записи</param>
         /// <returns></returns>
-        Task Update(TEntity model);
+        Task UpdateAsync(TEntity model);
 
         /// <summary>
         /// Удаляет запись
         /// </summary>
         /// <param name="id">Уникальный номер</param>
         /// <returns></returns>
-        Task Remove(TEntity model);
+        Task RemoveAsync(TEntity model);
 
         /// <summary>
         /// Сохраняет результат
         /// </summary>
         /// <returns></returns>
-        Task SaveChanges();
+        Task SaveChangesAsync();
 
 
     }

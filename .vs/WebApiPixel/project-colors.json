@@ -30,7 +30,17 @@
       "ProjectGuid": "12c9ba14-919c-4189-95e7-bf8a652fcb16",
       "DisplayName": "WebApiPixel.Migrations",
       "ColorIndex": 5
+    },
+    "bbff2a4e-e77a-4973-a28c-7fa0714bd174": {
+      "ProjectGuid": "bbff2a4e-e77a-4973-a28c-7fa0714bd174",
+      "DisplayName": "WebApiPixel.Mapper",
+      "ColorIndex": 6
+    },
+    "ce44a0c9-ac11-4664-a1a2-9c391d45e65f": {
+      "ProjectGuid": "ce44a0c9-ac11-4664-a1a2-9c391d45e65f",
+      "DisplayName": "WebApiPixel.Contracts",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 8
 }

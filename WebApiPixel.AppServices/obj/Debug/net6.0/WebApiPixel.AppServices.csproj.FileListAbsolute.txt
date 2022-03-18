@@ -13,3 +13,7 @@ F:\WebApiPixel\WebApiPixel.AppServices\obj\Debug\net6.0\WebApiPixel.AppServices.
 F:\WebApiPixel\WebApiPixel.AppServices\obj\Debug\net6.0\WebApiPixel.AppServices.dll
 F:\WebApiPixel\WebApiPixel.AppServices\obj\Debug\net6.0\ref\WebApiPixel.AppServices.dll
 F:\WebApiPixel\WebApiPixel.AppServices\obj\Debug\net6.0\WebApiPixel.AppServices.pdb
+F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Contracts.dll
+F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Infrastructure.dll
+F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Contracts.pdb
+F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Infrastructure.pdb
