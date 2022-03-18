@@ -1,0 +1,15 @@
+F:\WebApiPixel\WebApiPixel.Contracts\bin\Debug\net6.0\WebApiPixel.Contracts.deps.json
+F:\WebApiPixel\WebApiPixel.Contracts\bin\Debug\net6.0\WebApiPixel.Contracts.dll
+F:\WebApiPixel\WebApiPixel.Contracts\bin\Debug\net6.0\ref\WebApiPixel.Contracts.dll
+F:\WebApiPixel\WebApiPixel.Contracts\bin\Debug\net6.0\WebApiPixel.Contracts.pdb
+F:\WebApiPixel\WebApiPixel.Contracts\bin\Debug\net6.0\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Contracts\bin\Debug\net6.0\WebApiPixel.Domain.pdb
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.csproj.AssemblyReference.cache
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.AssemblyInfoInputs.cache
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.AssemblyInfo.cs
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.csproj.CoreCompileInputs.cache
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.csproj.CopyComplete
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.dll
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\ref\WebApiPixel.Contracts.dll
+F:\WebApiPixel\WebApiPixel.Contracts\obj\Debug\net6.0\WebApiPixel.Contracts.pdb

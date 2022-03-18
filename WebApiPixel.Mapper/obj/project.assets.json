@@ -22,6 +22,29 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "WebApiPixel.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "WebApiPixel.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApiPixel.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApiPixel.Contracts.dll": {}
+        }
+      },
+      "WebApiPixel.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebApiPixel.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApiPixel.Domain.dll": {}
+        }
       }
     }
   },
@@ -109,11 +132,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WebApiPixel.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../WebApiPixel.Contracts/WebApiPixel.Contracts.csproj",
+      "msbuildProject": "../WebApiPixel.Contracts/WebApiPixel.Contracts.csproj"
+    },
+    "WebApiPixel.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebApiPixel.Domain/WebApiPixel.Domain.csproj",
+      "msbuildProject": "../WebApiPixel.Domain/WebApiPixel.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AutoMapper >= 11.0.1"
+      "AutoMapper >= 11.0.1",
+      "WebApiPixel.Contracts >= 1.0.0",
+      "WebApiPixel.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -147,7 +182,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj": {
+              "projectPath": "F:\\WebApiPixel\\WebApiPixel.Contracts\\WebApiPixel.Contracts.csproj"
+            },
+            "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
+              "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

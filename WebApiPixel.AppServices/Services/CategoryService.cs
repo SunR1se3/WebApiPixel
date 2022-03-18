@@ -1,50 +1,58 @@
-﻿using System;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApiPixel.Contracts.Category;
 using WebApiPixel.Domain.Entities;
+using WebApiPixel.Infrastructure.Repository;
 
 namespace WebApiPixel.AppServices.Services
 {
     public class CategoryService : ICategoryService
     {
-        private List<Category> _db = new List<Category>();
+        private readonly IRepository<Category> _categoryRepository;
+        private readonly IMapper _mapper;
 
-        public bool Add(Category model)
+        public CategoryService(IRepository<Category> categoryRepository, IMapper mapper)
         {
-            try
+            _categoryRepository = categoryRepository;
+            _mapper = mapper;
+        }
+
+        public Task AddAsync(CategoryDto model)
+        {
+            var category = _mapper.Map<Category>(model);
+            return _categoryRepository.AddAsync(category);
+        }
+
+        public async Task<List<CategoryDto>> GetCategories()
+        {
+            var result = await _categoryRepository.GetAll()
+                .Include(w => w.Wares)
+                .ToListAsync();
+
+            return result.Count > 0 ? _mapper.Map<List<CategoryDto>>(result) : new List<CategoryDto>();
+        }
+
+        public async Task RemoveAsync(Guid id)
+        {
+            var category = await _categoryRepository.GetByIdAsync(id);
+            if (category == null)
             {
-                model.Id = Guid.NewGuid();
-                _db.Add(model);
-                return true;
+                throw new Exception($"Не найдена категория с id: {id}");
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            await _categoryRepository.RemoveAsync(category);
         }
 
-        public List<Category> GetCategories()
+        public async Task<CategoryDto> UpdateAsync(CategoryDto model)
         {
-            return _db;
-        }
-
-        public bool Remove(Guid id)
-        {
-            var category = _db.FirstOrDefault(category => category.Id == id);
-            if (category == null) return false;
-            _db.Remove(category);
-            return true;
-        }
-
-        public Category Update(Category model)
-        {
-            var category = _db.FirstOrDefault(category => category.Id == model.Id);
-            if (category == null) return null;
-            category.Title = model.Title;
-            category.IsAvailable = model.IsAvailable;
-            return category;
+            var category = _mapper.Map<Category>(model);
+            await _categoryRepository.UpdateAsync(category);
+            return _mapper.Map<CategoryDto>(category);
         }
     }
+
 }

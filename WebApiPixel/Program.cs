@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using WebApiPixel.AppServices.Services;
+using WebApiPixel.DataAccess;
 using WebApiPixel.Infrastructure.Repository;
+using WebApiPixel.Mapper.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,9 +11,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<ICategoryService, CategoryService>();
+
+builder.Services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationConnection")));
+
+builder.Services.AddScoped<DbContext>(s => s.GetRequiredService<BaseDbContext>());
+
+//конфигурация автомаппера
+builder.Services.AddAutoMapper(typeof(ApplicationMapperProfile));
+
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddTransient<ICategoryService, CategoryService>();
+
 
 var app = builder.Build();
 
