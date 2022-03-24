@@ -5,7 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiPixel.Contracts.Category;
+using WebApiPixel.Contracts.Employee;
+using WebApiPixel.Contracts.EmployeeOrderDto;
 using WebApiPixel.Contracts.Order;
+using WebApiPixel.Contracts.OrderHronology;
 using WebApiPixel.Contracts.Ware;
 using WebApiPixel.Domain.Entities;
 
@@ -30,7 +33,18 @@ namespace WebApiPixel.Mapper.Mapping
 
             CreateMap<OrderDto, Order>();
 
+            CreateMap<EmployeeOrder, EmployeeOrderDto>()
+                .ForMember(destination => destination.Employee, source => source.MapFrom(w => w.Employee.Fio));
 
+            CreateMap<EmployeeOrderDto, EmployeeOrder>();
+
+            CreateMap<Employee, EmployeeDto>();
+
+            CreateMap<EmployeeDto, Employee>();
+
+            CreateMap<OrderHronology, OrderHronologyDto>();
+
+            CreateMap<OrderHronologyDto, OrderHronology>();
         }
     }
 }
