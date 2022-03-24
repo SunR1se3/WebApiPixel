@@ -36,5 +36,15 @@ namespace WebApiPixel.Domain.Entities
         /// Дата окончания работы
         /// </summary>
         public DateTime DateOrderIsReady { get; set; }
+
+        /// <summary>
+        /// id заказа
+        /// </summary>
+        public Guid IdOrder { get; set; }
+
+        /// <summary>
+        /// Заказ
+        /// </summary>
+        public virtual Order Order { get; set; }
     }
 }

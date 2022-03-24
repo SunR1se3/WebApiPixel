@@ -51,5 +51,15 @@ namespace WebApiPixel.Domain.Entities
         /// Товар
         /// </summary>
         public virtual Ware Ware { get; set; }
+
+        /// <summary>
+        /// Хронология заказа
+        /// </summary>
+        public virtual OrderHronology OrderHronology { get; set; }
+
+        /// <summary>
+        /// СотрудникЗаказ
+        /// </summary>
+        public virtual EmployeeOrder EmployeeOrder { get; set; }
     }
 }
