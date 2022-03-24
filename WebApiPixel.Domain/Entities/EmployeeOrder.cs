@@ -18,8 +18,18 @@ namespace WebApiPixel.Domain.Entities
         public Guid EmployeeId { get; set; }
 
         /// <summary>
+        /// Сотрудник
+        /// </summary>
+        public virtual Employee Employee { get; set; }
+
+        /// <summary>
         /// id заказа
         /// </summary>
         public Guid OrderId { get; set; }
+
+        /// <summary>
+        /// Заказ
+        /// </summary>
+        public virtual Order Order { get; set; }
     }
 }

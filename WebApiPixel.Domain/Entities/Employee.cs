@@ -31,5 +31,10 @@ namespace WebApiPixel.Domain.Entities
         /// Является ли сотрудник админом
         /// </summary>
         public bool isAdmin { get; set; }
+
+        /// <summary>
+        /// СотрудникЗаказ
+        /// </summary>
+        public virtual EmployeeOrder EmployeeOrder { get; set; }
     }
 }

@@ -26,6 +26,17 @@ namespace WebApiPixel.DataAccess.Configuration
             //builder.HasOne(o => o.Category);
 
             builder.HasOne(o => o.Ware);
+
+            builder.HasOne(o => o.OrderHronology)
+            .WithOne(o => o.Order)
+            .HasForeignKey<OrderHronology>(o => o.IdOrder)
+            .HasConstraintName("FK_Order_OrderHronology");
+
+            builder.HasOne(x => x.EmployeeOrder)
+                .WithOne(x => x.Order)
+                .HasForeignKey<EmployeeOrder>(o => o.OrderId)
+                .HasConstraintName("FK_Order_EmployeeOrder");
+
         }
     }
 }
