@@ -25,6 +25,8 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 
+builder.Services.AddTransient<IEmployeeService, EmployeeService>();
+
 
 var app = builder.Build();
 
