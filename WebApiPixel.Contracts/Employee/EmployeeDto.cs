@@ -20,5 +20,15 @@ namespace WebApiPixel.Contracts.Employee
         /// Логин
         /// </summary>
         public string Login { get; set; }
+
+        /// <summary>
+        /// Пароль
+        /// </summary>
+        public string Password { get; set; }
+
+        /// <summary>
+        /// Является ли сотрудник админом
+        /// </summary>
+        public bool isAdmin { get; set; }
     }
 }
