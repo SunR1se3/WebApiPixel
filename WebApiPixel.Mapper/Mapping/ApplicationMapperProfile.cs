@@ -34,7 +34,7 @@ namespace WebApiPixel.Mapper.Mapping
             CreateMap<OrderDto, Order>();
 
             CreateMap<EmployeeOrder, EmployeeOrderDto>()
-                .ForMember(destination => destination.Employee, source => source.MapFrom(w => w.Employee.Fio));
+                .ForMember(destination => destination.EmployeeName, source => source.MapFrom(w => w.Employee.Fio));
 
             CreateMap<EmployeeOrderDto, EmployeeOrder>();
 

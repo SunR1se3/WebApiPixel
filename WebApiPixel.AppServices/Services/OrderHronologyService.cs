@@ -40,7 +40,7 @@ namespace WebApiPixel.AppServices.Services
             var employee = await _orderHronologyRepository.GetByIdAsync(id);
             if (employee == null)
             {
-                throw new Exception($"Не найден сотрудник с id: {id}");
+                throw new Exception($"Не найдена хронология с id: {id}");
             }
             await _orderHronologyRepository.RemoveAsync(employee);
         }

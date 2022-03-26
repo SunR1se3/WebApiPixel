@@ -16,7 +16,7 @@ namespace WebApiPixel.Contracts.EmployeeOrderDto
         /// <summary>
         /// Сотрудник
         /// </summary>
-        public string Employee { get; set; }
+        public string EmployeeName { get; set; }
 
         /// <summary>
         /// id заказа
