@@ -29,7 +29,7 @@ namespace WebApiPixel.Mapper.Mapping
             CreateMap<CategoryDto, Category>();
 
             CreateMap<Order, OrderDto>()
-                .ForMember(destination => destination.Ware, source => source.MapFrom(w => w.Ware.Title));
+                .ForMember(destination => destination.WareName, source => source.MapFrom(w => w.Ware.Title));
 
             CreateMap<OrderDto, Order>();
 

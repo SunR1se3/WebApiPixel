@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApiPixel.Migrations;
 
@@ -11,9 +12,10 @@ using WebApiPixel.Migrations;
 namespace WebApiPixel.Migrations.Migrations
 {
     [DbContext(typeof(MigrationsDbContext))]
-    partial class MigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220328183210_DeletePropOnDeleteNoAction_WareConf")]
+    partial class DeletePropOnDeleteNoAction_WareConf
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -115,7 +117,8 @@ namespace WebApiPixel.Migrations.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("WareId");
+                    b.HasIndex("WareId")
+                        .IsUnique();
 
                     b.ToTable("Order", (string)null);
                 });
@@ -198,8 +201,8 @@ namespace WebApiPixel.Migrations.Migrations
             modelBuilder.Entity("WebApiPixel.Domain.Entities.Order", b =>
                 {
                     b.HasOne("WebApiPixel.Domain.Entities.Ware", "Ware")
-                        .WithMany("Orders")
-                        .HasForeignKey("WareId")
+                        .WithOne("Order")
+                        .HasForeignKey("WebApiPixel.Domain.Entities.Order", "WareId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Order_Ware");
@@ -253,7 +256,8 @@ namespace WebApiPixel.Migrations.Migrations
 
             modelBuilder.Entity("WebApiPixel.Domain.Entities.Ware", b =>
                 {
-                    b.Navigation("Orders");
+                    b.Navigation("Order")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

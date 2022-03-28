@@ -24,10 +24,9 @@ namespace WebApiPixel.DataAccess.Configuration
 
             builder.HasOne(w => w.Category);
 
-            builder.HasOne(o => o.Order)
+            builder.HasMany(o => o.Orders)
                 .WithOne(w => w.Ware)
-                .HasForeignKey<Order>(o => o.WareId)
-                .OnDelete(DeleteBehavior.NoAction)
+                .HasForeignKey(w => w.WareId)
                 .HasConstraintName("FK_Order_Ware");
         }
     }
