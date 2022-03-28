@@ -19,7 +19,7 @@ namespace WebApiPixel.Mapper.Mapping
         public ApplicationMapperProfile()
         {
             CreateMap<Ware, WareDto>()
-                .ForMember(destination => destination.Category, source => source.MapFrom(w => w.Category.Title));
+                .ForMember(destination => destination.CategoryName, source => source.MapFrom(w => w.Category.Title));
 
             CreateMap<WareDto, Ware>();
 

@@ -40,6 +40,11 @@
       "ProjectGuid": "ce44a0c9-ac11-4664-a1a2-9c391d45e65f",
       "DisplayName": "WebApiPixel.Contracts",
       "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 8

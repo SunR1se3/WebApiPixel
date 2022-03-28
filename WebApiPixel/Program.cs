@@ -31,6 +31,8 @@ builder.Services.AddTransient<IOrderHronologyService, OrderHronologyService>();
 
 builder.Services.AddTransient<IEmployeeOrderService, EmployeeOrderService>();
 
+builder.Services.AddTransient<IWareService, WareService>();
+
 
 var app = builder.Build();
 
