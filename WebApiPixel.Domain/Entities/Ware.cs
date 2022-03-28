@@ -33,8 +33,8 @@ namespace WebApiPixel.Domain.Entities
         public virtual Category Category { get; set; }
 
         /// <summary>
-        /// Заказ
+        /// Коллекция заказов
         /// </summary>
-        public virtual Order Order { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

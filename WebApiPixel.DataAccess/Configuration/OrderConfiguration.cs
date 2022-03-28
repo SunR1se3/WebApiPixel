@@ -25,7 +25,9 @@ namespace WebApiPixel.DataAccess.Configuration
 
             //builder.HasOne(o => o.Category);
 
-            builder.HasOne(o => o.Ware);
+            //builder.HasMany(w => w.Ware);
+
+            builder.HasOne(w => w.Ware);
 
             builder.HasOne(o => o.OrderHronology)
             .WithOne(o => o.Order)
