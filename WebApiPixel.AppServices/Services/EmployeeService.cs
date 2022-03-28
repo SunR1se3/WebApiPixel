@@ -16,7 +16,7 @@ namespace WebApiPixel.AppServices.Services
         private readonly IRepository<Employee> _employeeRepository;
         private readonly IMapper _mapper;
 
-        public EmployeeService (IRepository<Employee> employeeRepository, IMapper mapper)
+        public EmployeeService(IRepository<Employee> employeeRepository, IMapper mapper)
         {
             _employeeRepository = employeeRepository;
             _mapper = mapper;

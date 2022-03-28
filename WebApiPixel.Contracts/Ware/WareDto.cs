@@ -29,6 +29,6 @@ namespace WebApiPixel.Contracts.Ware
         /// <summary>
         /// Категория
         /// </summary>
-        public string Category { get; set; }
+        public string CategoryName { get; set; }
     }
 }
