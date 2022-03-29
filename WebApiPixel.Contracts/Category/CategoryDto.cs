@@ -26,6 +26,6 @@ namespace WebApiPixel.Contracts.Category
         /// <summary>
         /// Коллекция товаров
         /// </summary>
-        public virtual List<WareDto> WaresDto { get; set; }
+        //public virtual List<WareDto> WaresDto { get; set; }
     }
 }
