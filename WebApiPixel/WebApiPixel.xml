@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiPixel</name>
+    </assembly>
+    <members>
+        <member name="T:WebApiPixel.Controllers.CategoryController">
+            <summary>
+            Категория
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CategoryController.#ctor(Microsoft.Extensions.Logging.ILogger{WebApiPixel.Controllers.CategoryController},WebApiPixel.AppServices.Services.ICategoryService)">
+            <summary>
+            Конструктор. Введение зависимостей через конструктор
+            </summary>
+            <param name="logger">Логирование</param>
+            <param name="categoryService">Сервис, обслуживающий контроллер</param>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CategoryController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех категорий</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CategoryController.Add(WebApiPixel.Contracts.Category.CategoryDto)">
+            <summary>
+            Добавить категорию
+            </summary>
+            <param name="model">Модель категории</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CategoryController.Update(WebApiPixel.Contracts.Category.CategoryDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель категороии</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CategoryController.Remove(System.Guid)">
+            <summary>
+            Удаляет категорию
+            </summary>
+            <param name="id">id категории</param>
+            <returns>Успех/недуачу удаления</returns>
+        </member>
+        <member name="T:WebApiPixel.Controllers.EmployeeController">
+            <summary>
+            Сотрудник
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех сотрудников</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeController.Add(WebApiPixel.Contracts.Employee.EmployeeDto)">
+            <summary>
+            Добавить сотрудника
+            </summary>
+            <param name="model">Модель сотрудника</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeController.Update(WebApiPixel.Contracts.Employee.EmployeeDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель сотрудника</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeController.Remove(System.Guid)">
+            <summary>
+            Удаляет сотрудника
+            </summary>
+            <param name="id">id сотрудника</param>
+            <returns>Успех/неудачу удаления</returns>
+        </member>
+        <member name="T:WebApiPixel.Controllers.EmployeeOrderController">
+            <summary>
+            СотрудникЗаказ
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeOrderController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех записей</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeOrderController.Add(WebApiPixel.Contracts.EmployeeOrderDto.EmployeeOrderDto)">
+            <summary>
+            Добавить запись
+            </summary>
+            <param name="model">Модель СотрудникЗаказ</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeOrderController.Update(WebApiPixel.Contracts.EmployeeOrderDto.EmployeeOrderDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель СотрудникЗаказ</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeOrderController.Remove(System.Guid)">
+            <summary>
+            Удаляет запись
+            </summary>
+            <param name="id">id записи</param>
+            <returns>Успех/неудачу удаления</returns>
+        </member>
+        <member name="T:WebApiPixel.Controllers.OrderController">
+            <summary>
+            Заказ
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех заказов</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderController.Add(WebApiPixel.Contracts.Order.OrderDto)">
+            <summary>
+            Добавить заказ
+            </summary>
+            <param name="model">Модель заказа</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderController.Update(WebApiPixel.Contracts.Order.OrderDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель заказа</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderController.Remove(System.Guid)">
+            <summary>
+            Удаляет заказ
+            </summary>
+            <param name="id">id заказа</param>
+            <returns>Успех/неудачу удаления</returns>
+        </member>
+        <member name="T:WebApiPixel.Controllers.OrderHronologyController">
+            <summary>
+            Хронология заказа
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderHronologyController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех хронлогий</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderHronologyController.Add(WebApiPixel.Contracts.OrderHronology.OrderHronologyDto)">
+            <summary>
+            Добавить хронлогию
+            </summary>
+            <param name="model">Модель хронологии</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderHronologyController.Update(WebApiPixel.Contracts.OrderHronology.OrderHronologyDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель хронологии</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderHronologyController.Remove(System.Guid)">
+            <summary>
+            Удаляет хронологию
+            </summary>
+            <param name="id">id хронологии</param>
+            <returns>Успех/неудачу удаления</returns>
+        </member>
+        <member name="T:WebApiPixel.Controllers.WareController">
+            <summary>
+            Товар
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.WareController.#ctor(Microsoft.Extensions.Logging.ILogger{WebApiPixel.Controllers.WareController},WebApiPixel.AppServices.Services.IWareService)">
+            <summary>
+            Конструктор. Внедрение зависимостей через конструктор
+            </summary>
+            <param name="logger">Логирование</param>
+            <param name="wareService">Сервис, обслуживающий контроллер</param>
+        </member>
+        <member name="M:WebApiPixel.Controllers.WareController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех товаров</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.WareController.Add(WebApiPixel.Contracts.Ware.WareDto)">
+            <summary>
+            Добавить товар
+            </summary>
+            <param name="model">Модель товара</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.WareController.Update(WebApiPixel.Contracts.Ware.WareDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель товара</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.WareController.Remove(System.Guid)">
+            <summary>
+            Удаляет товар
+            </summary>
+            <param name="id">id товара</param>
+            <returns>Успех/неудачу удаления</returns>
+        </member>
+    </members>
+</doc>

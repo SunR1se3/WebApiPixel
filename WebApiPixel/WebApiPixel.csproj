@@ -4,6 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<DocumentationFile>WebApiPixel.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +19,12 @@
     <ProjectReference Include="..\WebApiPixel.DataAccess\WebApiPixel.DataAccess.csproj" />
     <ProjectReference Include="..\WebApiPixel.Infrastructure\WebApiPixel.Infrastructure.csproj" />
     <ProjectReference Include="..\WebApiPixel.Mapper\WebApiPixel.Mapper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="WebApiPixel.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
