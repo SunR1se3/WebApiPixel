@@ -15,6 +15,11 @@ namespace WebApiPixel.Controllers
         private readonly ILogger<CategoryController> _logger;
         private readonly ICategoryService _categoryService;
 
+        /// <summary>
+        /// Конструктор. Введение зависимостей через конструктор
+        /// </summary>
+        /// <param name="logger">Логирование</param>
+        /// <param name="categoryService">Сервис, обслуживающий контроллер</param>
         public CategoryController(ILogger<CategoryController> logger, ICategoryService categoryService)
         {
             _logger = logger;

@@ -71,3 +71,4 @@ F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.Mapper.dll
 F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.DataAccess.pdb
 F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.Mapper.pdb
 F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.Contracts.pdb
+F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.xml

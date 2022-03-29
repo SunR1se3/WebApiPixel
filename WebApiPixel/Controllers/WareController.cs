@@ -15,6 +15,11 @@ namespace WebApiPixel.Controllers
         private readonly ILogger<WareController> _logger;
         private readonly IWareService _wareService;
 
+        /// <summary>
+        /// Конструктор. Внедрение зависимостей через конструктор
+        /// </summary>
+        /// <param name="logger">Логирование</param>
+        /// <param name="wareService">Сервис, обслуживающий контроллер</param>
         public WareController(ILogger<WareController> logger, IWareService wareService)
         {
             _logger = logger;
