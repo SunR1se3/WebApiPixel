@@ -23,6 +23,9 @@ namespace WebApiPixel.DataAccess.Configuration
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
 
             builder.HasOne(o => o.Order);
+
+            builder.Property(x => x.DateAcceptionOrder)
+                .HasDefaultValue("0001-01-01");
         }
     }
 }
