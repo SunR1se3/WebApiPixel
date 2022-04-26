@@ -30,7 +30,9 @@ namespace WebApiPixel.AppServices.Services
 
         public async Task<List<OrderDto>> GetOrders()
         {
-            var result = await _orderRepository.GetAll().ToListAsync();
+            var result = await _orderRepository.GetAll()
+                .Include(o => o.Ware)
+                .ToListAsync();
 
             return result.Count > 0 ? _mapper.Map<List<OrderDto>>(result) : new List<OrderDto>();
         }

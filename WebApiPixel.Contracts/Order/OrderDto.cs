@@ -33,6 +33,11 @@ namespace WebApiPixel.Contracts.Order
         public string WareName { get; set; }
 
         /// <summary>
+        /// Детали товара
+        /// </summary>
+        public string WareDetails { get; set; }
+
+        /// <summary>
         /// id товара
         /// </summary>
         public Guid WareId { get; set; }

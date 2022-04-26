@@ -29,7 +29,9 @@ namespace WebApiPixel.AppServices.Services
 
         public async Task<List<EmployeeOrderDto>> GetEmployeeOrders()
         {
-            var result = await _employeeOrderRepository.GetAll().ToListAsync();
+            var result = await _employeeOrderRepository.GetAll()
+                .Include(e => e.Employee)
+                .ToListAsync();
 
             return result.Count > 0 ? _mapper.Map<List<EmployeeOrderDto>>(result) : new List<EmployeeOrderDto>();
 

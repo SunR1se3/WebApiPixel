@@ -23,6 +23,11 @@ namespace WebApiPixel.Domain.Entities
         public float Price { get; set; }
 
         /// <summary>
+        /// Детали товара (тип бумаги, материал...)
+        /// </summary>
+        public string Details { get; set; }
+
+        /// <summary>
         /// id категории, к которой относится товар
         /// </summary>
         public Guid CategoryId { get; set; }

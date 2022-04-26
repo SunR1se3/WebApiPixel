@@ -30,7 +30,9 @@ namespace WebApiPixel.AppServices.Services
 
         public async Task<List<WareDto>> GetWares()
         {
-            var result = await _wareRepository.GetAll().ToListAsync();
+            var result = await _wareRepository.GetAll()
+                .Include(w => w.Category)
+                .ToListAsync();
 
             return result.Count > 0 ? _mapper.Map<List<WareDto>>(result) : new List<WareDto>();
         }
