@@ -33,6 +33,32 @@ namespace WebApiPixel.Controllers
         }
 
         /// <summary>
+        /// Получить заказ по id
+        /// </summary>
+        /// <param name="id">id заказа</param>
+        /// <returns>Модель заказа</returns>
+        [HttpGet("/order/{id}")]
+        public async Task<IActionResult> GetByIdOrder([FromRoute] Guid id)
+        {
+            var result = await _orderService.GetOrderById(id);
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Получить последний элемент
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById([FromRoute] Guid id, [FromQuery] string email)
+        {
+            var result = await _orderService.GetLastOrder();
+            if (email != "null") _orderService.SendEmailAsync(id, email);
+            return Ok(result);
+        }
+
+        /// <summary>
         /// Добавить заказ
         /// </summary>
         /// <param name="model">Модель заказа</param>
@@ -40,6 +66,7 @@ namespace WebApiPixel.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromQuery] OrderDto model)
         {
+            //await _orderService.SaveFile(formFile);
             await _orderService.AddAsync(model);
             return Created(String.Empty, null);
         }

@@ -36,6 +36,17 @@ namespace WebApiPixel.Controllers
             var result = await _categoryService.GetCategories();
             return Ok(result);
         }
+        /// <summary>
+        /// Получить категорию по имени
+        /// </summary>
+        /// <param name="name">Имя категории</param>
+        /// <returns>Модель категории</returns>
+        [HttpGet("{name}")]
+        public async Task<IActionResult> GetByName([FromRoute] string name)
+        {
+            var result = await _categoryService.GetCategoryByName(name);
+            return Ok(result);
+        }
 
         /// <summary>
         /// Добавить категорию

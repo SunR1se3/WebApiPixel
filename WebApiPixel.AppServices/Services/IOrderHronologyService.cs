@@ -19,6 +19,13 @@ namespace WebApiPixel.AppServices.Services
         Task<List<OrderHronologyDto>> GetOrderHronologys();
 
         /// <summary>
+        /// Получает хронологию по номеру заказа
+        /// </summary>
+        /// <param name="id">id заказа</param>
+        /// <returns>Модель хронологии заказа</returns>
+        Task<List<OrderHronologyDto>> GetOrderHronologyById(Guid id);
+
+        /// <summary>
         /// Добавляет хронологию
         /// </summary>
         /// <param name="model">Модель хронологии</param>

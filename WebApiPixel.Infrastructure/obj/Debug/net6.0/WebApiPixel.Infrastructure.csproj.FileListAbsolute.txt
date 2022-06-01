@@ -10,3 +10,6 @@ F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastru
 F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.dll
 F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\ref\WebApiPixel.Infrastructure.dll
 F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.pdb
+F:\WebApiPixel\WebApiPixel.Infrastructure\bin\Debug\net6.0\WebApiPixel.Domain.dll
+F:\WebApiPixel\WebApiPixel.Infrastructure\bin\Debug\net6.0\WebApiPixel.Domain.pdb
+F:\WebApiPixel\WebApiPixel.Infrastructure\obj\Debug\net6.0\WebApiPixel.Infrastructure.csproj.CopyComplete

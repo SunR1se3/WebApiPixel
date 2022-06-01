@@ -4,14 +4,14 @@
     "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj": {}
   },
   "projects": {
-    "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj": {
+    "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj",
-        "projectName": "WebApiPixel.Infrastructure",
-        "projectPath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj",
+        "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj",
+        "projectName": "WebApiPixel.Domain",
+        "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj",
         "packagesPath": "C:\\Users\\sevg3\\.nuget\\packages\\",
-        "outputPath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\obj\\",
+        "outputPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,74 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj",
+        "projectName": "WebApiPixel.Infrastructure",
+        "projectPath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\sevg3\\.nuget\\packages\\",
+        "outputPath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sevg3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj": {
+                "projectPath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.2, )"
@@ -64,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     }

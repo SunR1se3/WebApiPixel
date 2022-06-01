@@ -35,6 +35,12 @@ namespace WebApiPixel.AppServices.Services
             return result.Count > 0 ? _mapper.Map<List<EmployeeDto>>(result) : new List<EmployeeDto>();
         }
 
+        public async Task<List<EmployeeDto>> Login(string login, string password)
+        {
+            var result = await _employeeRepository.GetAll().Where(x => x.Login == login && x.Password == password).ToListAsync();
+            return result.Count > 0 ? _mapper.Map<List<EmployeeDto>>(result) : new List<EmployeeDto>();
+        }
+
         public async Task RemoveAsync(Guid id)
         {
             var employee = await _employeeRepository.GetByIdAsync(id);

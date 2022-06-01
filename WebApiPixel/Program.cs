@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
@@ -44,6 +45,16 @@ builder.Services.AddTransient<IWareService, WareService>();
 
 builder.Services.AddTransient<IOrderService, OrderService>();
 
+builder.Services.AddTransient<ICalculatorDocumentsService, CalculatorDocumentsService>();
+
+builder.Services.AddTransient<IDocumentSettingsService, DocumentSettingsService>();
+
+builder.Services.AddTransient<IOfferMainPageService, OfferMainPageService>();
+
+builder.Services.AddTransient<IFileService, FileService>();
+builder.Services.AddScoped<IFileRepository, FileRepository>();
+
+builder.Services.AddCors();
 
 var app = builder.Build();
 
@@ -52,6 +63,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("../swagger/v1/swagger.json", "WebApiPixel v1"));
+    app.UseDeveloperExceptionPage();
 }
 
 app.UseHttpsRedirection();
@@ -59,5 +71,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors(x => x
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed(origin => true)
+    .AllowCredentials());
 
 app.Run();

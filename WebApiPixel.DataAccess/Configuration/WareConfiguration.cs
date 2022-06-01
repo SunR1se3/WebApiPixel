@@ -24,6 +24,11 @@ namespace WebApiPixel.DataAccess.Configuration
 
             builder.HasOne(w => w.Category);
 
+            builder.HasMany(d => d.DocumentSettings)
+                .WithOne(w => w.Ware)
+                .HasForeignKey(w => w.WareId)
+                .HasConstraintName("FK_Ware_DocumentSettings");
+
             builder.HasMany(o => o.Orders)
                 .WithOne(w => w.Ware)
                 .HasForeignKey(w => w.WareId)

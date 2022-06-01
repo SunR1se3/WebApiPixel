@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qL2KYQ5bf9gokdQNEcP5xG0tFzzeySh7ee4ADRsZvlXbXi6rcNHHm7RBzWaktT1XLl3loVK6WiUcE7ameLQmaQ==",
+  "dgSpecHash": "4RfDxn7Sa4wxzkpqp/dHqKhxw92W15rw/VbwsgpdmHGRTNWju63fGE/poMVypQPJ9aBKi6oN3glvAQiU4KosuA==",
   "success": true,
   "projectFilePath": "F:\\WebApiPixel\\WebApiPixel.Infrastructure\\WebApiPixel.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.2\\microsoft.entityframeworkcore.analyzers.6.0.2.nupkg.sha512",
@@ -17,6 +18,7 @@
     "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\sevg3\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\sevg3\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\sevg3\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\sevg3\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

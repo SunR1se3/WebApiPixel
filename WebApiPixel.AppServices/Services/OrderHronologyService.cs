@@ -35,6 +35,14 @@ namespace WebApiPixel.AppServices.Services
             return result.Count > 0 ? _mapper.Map<List<OrderHronologyDto>>(result) : new List<OrderHronologyDto>();
         }
 
+        public async Task<List<OrderHronologyDto>> GetOrderHronologyById(Guid id)
+        {
+            var result = await _orderHronologyRepository.GetAll()
+                .Where(x => x.IdOrder == id)
+                .ToListAsync();
+            return result.Count > 0 ? _mapper.Map<List<OrderHronologyDto>>(result) : new List<OrderHronologyDto>();
+        }
+
         public async Task RemoveAsync(Guid id)
         {
             var employee = await _orderHronologyRepository.GetByIdAsync(id);

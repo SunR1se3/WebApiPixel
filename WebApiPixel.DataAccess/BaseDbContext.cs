@@ -26,6 +26,7 @@ namespace WebApiPixel.DataAccess
             modelBuilder.ApplyConfiguration(new OrderHronologyConfiguration());
             modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
             modelBuilder.ApplyConfiguration(new EmployeeOrderConfiguration());
+            modelBuilder.ApplyConfiguration(new OfferMainPageConfiguration());
         }
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,9 +35,14 @@ namespace WebApiPixel.Contracts.Order
         public string WareName { get; set; }
 
         /// <summary>
-        /// Детали товара
+        /// Подробности заказа
         /// </summary>
-        public string WareDetails { get; set; }
+        public string Details { get; set; }
+
+        /// <summary>
+        /// Исходники, отправленные клиентом
+        /// </summary>
+        public string File { get; set; }
 
         /// <summary>
         /// id товара

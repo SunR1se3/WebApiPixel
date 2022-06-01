@@ -53,5 +53,15 @@ namespace WebApiPixel.AppServices.Services
             await _wareRepository.UpdateAsync(ware);
             return _mapper.Map<WareDto>(ware);
         }
+
+        public async Task<float> GetPriceA4(Guid id)
+        {
+            var ware = await _wareRepository.GetByIdAsync(id);
+            if (ware == null)
+            {
+                throw new Exception($"Не найден товар с id: {id}");
+            }
+            return 1;
+        }
     }
 }

@@ -17,14 +17,9 @@ namespace WebApiPixel.Contracts.Ware
         public string Title { get; set; }
 
         /// <summary>
-        /// Цена
+        /// Описание услуги
         /// </summary>
-        public float Price { get; set; }
-
-        /// <summary>
-        /// Детали товара (тип бумаги, материал...)
-        /// </summary>
-        public string Details { get; set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// id категории, к которой относится товар

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiPixel.Contracts.Ware;
+using WebApiPixel.Domain.Entities;
 
 namespace WebApiPixel.AppServices.Services
 {
@@ -38,5 +39,12 @@ namespace WebApiPixel.AppServices.Services
         /// <param name="model">Модель товара</param>
         /// <returns>Обновленную модель</returns>
         Task<WareDto> UpdateAsync(WareDto model);
+
+        /// <summary>
+        /// Считает цену для формата А4
+        /// </summary>
+        /// <param name="id">Id товара</param>
+        /// <returns>цену товара</returns>
+        Task<float> GetPriceA4(Guid id);
     }
 }

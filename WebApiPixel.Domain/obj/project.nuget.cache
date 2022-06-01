@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nMwFjJsizthQsx0AuCEE/APfhRffIJR7N+E8iVfQWvQsFl0Zlph2qdjDDPpjtKZBk6nk01M/rWXqTN23rd/Y0A==",
+  "dgSpecHash": "EkNU4jo408bHli88VVHvw5OydCq8lbWyCrFsBYGfb2XzO7TXHHvzVTryY53V2QhUHgZvnatCpkW37vCXd3Q42w==",
   "success": true,
   "projectFilePath": "F:\\WebApiPixel\\WebApiPixel.Domain\\WebApiPixel.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\sevg3\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\sevg3\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -17,3 +17,5 @@ F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Contracts.dl
 F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Infrastructure.dll
 F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Contracts.pdb
 F:\WebApiPixel\WebApiPixel.AppServices\bin\Debug\net6.0\WebApiPixel.Infrastructure.pdb
+F:\WebApiPixel\WebApiPixel.AppServices\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Word.dll
+F:\WebApiPixel\WebApiPixel.AppServices\obj\Debug\net6.0\WebApiPixel.AppServices.csproj.ResolveComReference.cache

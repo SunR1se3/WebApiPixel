@@ -72,5 +72,12 @@ namespace WebApiPixel.Controllers
             await _wareService.RemoveAsync(id);
             return Ok();
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPriceA4(Guid id)
+        {
+            var result = await _wareService.GetPriceA4(id);
+            return Ok(result);
+        }
     }
 }

@@ -40,6 +40,29 @@ namespace WebApiPixel.Migrations.Migrations
                     b.ToTable("Category", (string)null);
                 });
 
+            modelBuilder.Entity("WebApiPixel.Domain.Entities.DocumentSettings", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("WareId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WareId");
+
+                    b.ToTable("DocumentSettings");
+                });
+
             modelBuilder.Entity("WebApiPixel.Domain.Entities.Employee", b =>
                 {
                     b.Property<Guid>("Id")
@@ -89,13 +112,44 @@ namespace WebApiPixel.Migrations.Migrations
                     b.ToTable("EmployeeOrder", (string)null);
                 });
 
+            modelBuilder.Entity("WebApiPixel.Domain.Entities.OfferMainPage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OfferMainPage", (string)null);
+                });
+
             modelBuilder.Entity("WebApiPixel.Domain.Entities.Order", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Details")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("File")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -134,17 +188,14 @@ namespace WebApiPixel.Migrations.Migrations
                     b.Property<DateTime>("DateCreationOrder")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateOrderIsReady")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DatePrepare")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateProduce")
-                        .HasColumnType("datetime2");
-
                     b.Property<Guid>("IdOrder")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Production")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDone")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -163,12 +214,9 @@ namespace WebApiPixel.Migrations.Migrations
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Details")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -179,6 +227,18 @@ namespace WebApiPixel.Migrations.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Ware", (string)null);
+                });
+
+            modelBuilder.Entity("WebApiPixel.Domain.Entities.DocumentSettings", b =>
+                {
+                    b.HasOne("WebApiPixel.Domain.Entities.Ware", "Ware")
+                        .WithMany("DocumentSettings")
+                        .HasForeignKey("WareId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_Ware_DocumentSettings");
+
+                    b.Navigation("Ware");
                 });
 
             modelBuilder.Entity("WebApiPixel.Domain.Entities.EmployeeOrder", b =>
@@ -260,6 +320,8 @@ namespace WebApiPixel.Migrations.Migrations
 
             modelBuilder.Entity("WebApiPixel.Domain.Entities.Ware", b =>
                 {
+                    b.Navigation("DocumentSettings");
+
                     b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618

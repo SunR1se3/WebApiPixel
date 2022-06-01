@@ -34,6 +34,18 @@ namespace WebApiPixel.Controllers
         }
 
         /// <summary>
+        /// Получает хронологию заказа по id заказа
+        /// </summary>
+        /// <param name="id">id заказа</param>
+        /// <returns>Модель хронлогии заказа</returns>
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById([FromRoute] Guid id)
+        {
+            var result = await _orderHronologyService.GetOrderHronologyById(id);
+            return Ok(result);
+        }
+
+        /// <summary>
         /// Добавить хронлогию
         /// </summary>
         /// <param name="model">Модель хронологии</param>

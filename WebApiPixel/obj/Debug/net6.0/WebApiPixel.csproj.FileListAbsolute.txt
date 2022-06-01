@@ -72,3 +72,5 @@ F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.DataAccess.pdb
 F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.Mapper.pdb
 F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.Contracts.pdb
 F:\WebApiPixel\WebApiPixel\bin\Debug\net6.0\WebApiPixel.xml
+F:\WebApiPixel\WebApiPixel\obj\Debug\net6.0\Interop.Microsoft.Office.Interop.Word.dll
+F:\WebApiPixel\WebApiPixel\obj\Debug\net6.0\WebApiPixel.csproj.ResolveComReference.cache

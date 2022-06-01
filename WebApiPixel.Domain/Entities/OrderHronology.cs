@@ -23,6 +23,15 @@ namespace WebApiPixel.Domain.Entities
         public DateTime DateAcceptionOrder { get; set; }
 
         /// <summary>
+        /// Изготовление заказа
+        /// </summary>
+        public bool Production { get; set; }
+
+        /// <summary>
+        /// Заказ готов
+        /// </summary>
+        public bool isDone { get; set; }
+        /*/// <summary>
         /// Дата подготовки к выполнению
         /// </summary>
         public DateTime DatePrepare { get; set; }
@@ -35,7 +44,7 @@ namespace WebApiPixel.Domain.Entities
         /// <summary>
         /// Дата окончания работы
         /// </summary>
-        public DateTime DateOrderIsReady { get; set; }
+        public DateTime DateOrderIsReady { get; set; }*/
 
         /// <summary>
         /// id заказа

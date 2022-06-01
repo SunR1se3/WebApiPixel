@@ -38,7 +38,6 @@ namespace WebApiPixel.DataAccess.Configuration
                 .WithOne(x => x.Order)
                 .HasForeignKey<EmployeeOrder>(o => o.OrderId)
                 .HasConstraintName("FK_Order_EmployeeOrder");
-
         }
     }
 }

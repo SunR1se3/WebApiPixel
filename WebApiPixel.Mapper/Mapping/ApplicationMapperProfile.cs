@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApiPixel.Contracts.CalculatorDocuments;
 using WebApiPixel.Contracts.Category;
+using WebApiPixel.Contracts.DocumentSettings;
 using WebApiPixel.Contracts.Employee;
 using WebApiPixel.Contracts.EmployeeOrderDto;
 using WebApiPixel.Contracts.Order;
@@ -29,8 +31,7 @@ namespace WebApiPixel.Mapper.Mapping
             CreateMap<CategoryDto, Category>();
 
             CreateMap<Order, OrderDto>()
-                .ForMember(destination => destination.WareName, source => source.MapFrom(w => w.Ware.Title))
-                .ForMember(destination => destination.WareDetails, source => source.MapFrom(w => w.Ware.Details));
+                .ForMember(destination => destination.WareName, source => source.MapFrom(w => w.Ware.Title));
 
             CreateMap<OrderDto, Order>();
 
@@ -46,6 +47,12 @@ namespace WebApiPixel.Mapper.Mapping
             CreateMap<OrderHronology, OrderHronologyDto>();
 
             CreateMap<OrderHronologyDto, OrderHronology>();
+
+            CreateMap<DocumentSettings, DocumentSettingsDto>();
+            CreateMap<DocumentSettingsDto, DocumentSettings>();
+
+            CreateMap<CalculatorDocuments, CalculatorDocumentsDto>();
+            CreateMap<CalculatorDocumentsDto, CalculatorDocuments>();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,26 @@ namespace WebApiPixel.AppServices.Services
         /// </summary>
         /// <returns>Список всех заказов</returns>
         Task<List<OrderDto>> GetOrders();
+
+        /// <summary>
+        /// Отправить email
+        /// </summary>
+        /// <param name="idOrder"></param>
+        void SendEmailAsync(Guid idOrder, string email);
+
+        /// <summary>
+        /// Получает последний заказ
+        /// </summary>
+        /// <param name="id">id заказа</param>
+        /// <returns>Модель заказа</returns>
+        Task<OrderDto> GetLastOrder();
+
+        /// <summary>
+        /// Поиск заказа по id
+        /// </summary>
+        /// <param name="id">id заказа</param>
+        /// <returns>Модель заказа</returns>
+        Task<OrderDto> GetOrderById(Guid id);
 
         /// <summary>
         /// Добавляет заказ
@@ -38,5 +59,7 @@ namespace WebApiPixel.AppServices.Services
         /// <param name="model">Модель заказа</param>
         /// <returns>Обновленную модель</returns>
         Task<OrderDto> UpdateAsync(OrderDto model);
+
+        //Task<bool> SaveFile(IFormFile formFile);
     }
 }

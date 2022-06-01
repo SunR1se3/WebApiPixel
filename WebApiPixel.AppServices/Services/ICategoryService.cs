@@ -20,6 +20,13 @@ namespace WebApiPixel.AppServices.Services
         Task<List<CategoryDto>> GetCategories();
 
         /// <summary>
+        /// Получает категорию по имени
+        /// </summary>
+        /// <param name="name">Имя категории</param>
+        /// <returns>Модель категории</returns>
+        Task<CategoryDto> GetCategoryByName(string name);
+
+        /// <summary>
         /// Добавляет категорию
         /// </summary>
         /// <param name="model">Модель категории</param>

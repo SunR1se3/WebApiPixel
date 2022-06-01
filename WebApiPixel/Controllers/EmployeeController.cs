@@ -33,6 +33,19 @@ namespace WebApiPixel.Controllers
         }
 
         /// <summary>
+        /// Вход сотрудника
+        /// </summary>
+        /// <param name="login">Логин</param>
+        /// <param name="password">Пароль</param>
+        /// <returns></returns>
+        [HttpGet("{login}/{password}")]
+        public async Task<IActionResult> LoginEmploeey([FromRoute] string login, [FromRoute] string password)
+        {
+            var result = await _employeeService.Login(login, password);
+            return Ok(result);
+        }
+
+        /// <summary>
         /// Добавить сотрудника
         /// </summary>
         /// <param name="model">Модель сотрудника</param>

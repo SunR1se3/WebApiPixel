@@ -4,6 +4,25 @@
         <name>WebApiPixel</name>
     </assembly>
     <members>
+        <member name="T:WebApiPixel.Controllers.CalculatorDocumentsController">
+            <summary>
+            Калькулятор для тиражирования документов
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CalculatorDocumentsController.#ctor(Microsoft.Extensions.Logging.ILogger{WebApiPixel.Controllers.CalculatorDocumentsController},WebApiPixel.AppServices.Services.ICalculatorDocumentsService)">
+            <summary>
+            Конструктор. Внедрение зависимостей через конструктор
+            </summary>
+            <param name="logger">Логирование</param>
+            <param name="calculatorDocumentsService">Сервис, обслуживающий контроллер</param>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CalculatorDocumentsController.GetPriceDocument(WebApiPixel.Domain.Entities.CalculatorDocuments)">
+            <summary>
+            Добавить параметры для тиражирования документов
+            </summary>
+            <param name="model">модель параметров</param>
+            <returns></returns>
+        </member>
         <member name="T:WebApiPixel.Controllers.CategoryController">
             <summary>
             Категория
@@ -21,6 +40,13 @@
             Получить данные
             </summary>
             <returns>Список всех категорий</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.CategoryController.GetByName(System.String)">
+            <summary>
+            Получить категорию по имени
+            </summary>
+            <param name="name">Имя категории</param>
+            <returns>Модель категории</returns>
         </member>
         <member name="M:WebApiPixel.Controllers.CategoryController.Add(WebApiPixel.Contracts.Category.CategoryDto)">
             <summary>
@@ -43,6 +69,52 @@
             <param name="id">id категории</param>
             <returns>Успех/недуачу удаления</returns>
         </member>
+        <member name="T:WebApiPixel.Controllers.DocumentSettingsController">
+            <summary>
+            Параметры для тиражирования документов
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.DocumentSettingsController.#ctor(Microsoft.Extensions.Logging.ILogger{WebApiPixel.Controllers.DocumentSettingsController},WebApiPixel.AppServices.Services.IDocumentSettingsService)">
+            <summary>
+            Конструктор. Введение зависимостей через конструктор
+            </summary>
+            <param name="logger">Логирование</param>
+            <param name="documentSettingsService">Сервис, обслуживающий контроллер</param>
+        </member>
+        <member name="M:WebApiPixel.Controllers.DocumentSettingsController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех параметров</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.DocumentSettingsController.GetById(System.Guid)">
+            <summary>
+            Получает параметр по id
+            </summary>
+            <param name="id">id</param>
+            <returns>Параметр</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.DocumentSettingsController.Add(WebApiPixel.Contracts.DocumentSettings.DocumentSettingsDto)">
+            <summary>
+            Добавить параметр
+            </summary>
+            <param name="model">Модель параметра</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.DocumentSettingsController.Update(WebApiPixel.Contracts.DocumentSettings.DocumentSettingsDto)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель параметра</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.DocumentSettingsController.Remove(System.Guid)">
+            <summary>
+            Удаляет параметр
+            </summary>
+            <param name="id">id параметра</param>
+            <returns>Успех/недуачу удаления</returns>
+        </member>
         <member name="T:WebApiPixel.Controllers.EmployeeController">
             <summary>
             Сотрудник
@@ -53,6 +125,14 @@
             Получить данные
             </summary>
             <returns>Список всех сотрудников</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.EmployeeController.LoginEmploeey(System.String,System.String)">
+            <summary>
+            Вход сотрудника
+            </summary>
+            <param name="login">Логин</param>
+            <param name="password">Пароль</param>
+            <returns></returns>
         </member>
         <member name="M:WebApiPixel.Controllers.EmployeeController.Add(WebApiPixel.Contracts.Employee.EmployeeDto)">
             <summary>
@@ -107,6 +187,43 @@
             <param name="id">id записи</param>
             <returns>Успех/неудачу удаления</returns>
         </member>
+        <member name="T:WebApiPixel.Controllers.FileController">
+            <summary>
+            Работа с файлами
+            </summary>
+        </member>
+        <member name="T:WebApiPixel.Controllers.OfferMainPageController">
+            <summary>
+            Главная страница: список услуг
+            </summary>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OfferMainPageController.Get">
+            <summary>
+            Получить данные
+            </summary>
+            <returns>Список всех услуг</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OfferMainPageController.Add(WebApiPixel.Domain.Entities.OfferMainPage)">
+            <summary>
+            Добавить услугу
+            </summary>
+            <param name="model">Модель услуги</param>
+            <returns>Успех/неудачу добавления</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OfferMainPageController.Update(WebApiPixel.Domain.Entities.OfferMainPage)">
+            <summary>
+            Обновить данные
+            </summary>
+            <param name="model">Модель услуги</param>
+            <returns>Успех/неудачу редактирования</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OfferMainPageController.Remove(System.Guid)">
+            <summary>
+            Удаляет услугу
+            </summary>
+            <param name="id">id услуги</param>
+            <returns>Успех/неудачу удаления</returns>
+        </member>
         <member name="T:WebApiPixel.Controllers.OrderController">
             <summary>
             Заказ
@@ -117,6 +234,21 @@
             Получить данные
             </summary>
             <returns>Список всех заказов</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderController.GetByIdOrder(System.Guid)">
+            <summary>
+            Получить заказ по id
+            </summary>
+            <param name="id">id заказа</param>
+            <returns>Модель заказа</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderController.GetById(System.Guid,System.String)">
+            <summary>
+            Получить последний элемент
+            </summary>
+            <param name="id"></param>
+            <param name="email"></param>
+            <returns></returns>
         </member>
         <member name="M:WebApiPixel.Controllers.OrderController.Add(WebApiPixel.Contracts.Order.OrderDto)">
             <summary>
@@ -149,6 +281,13 @@
             Получить данные
             </summary>
             <returns>Список всех хронлогий</returns>
+        </member>
+        <member name="M:WebApiPixel.Controllers.OrderHronologyController.GetById(System.Guid)">
+            <summary>
+            Получает хронологию заказа по id заказа
+            </summary>
+            <param name="id">id заказа</param>
+            <returns>Модель хронлогии заказа</returns>
         </member>
         <member name="M:WebApiPixel.Controllers.OrderHronologyController.Add(WebApiPixel.Contracts.OrderHronology.OrderHronologyDto)">
             <summary>

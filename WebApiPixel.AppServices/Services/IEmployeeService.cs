@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiPixel.Contracts.Employee;
+using WebApiPixel.Domain.Entities;
 
 namespace WebApiPixel.AppServices.Services
 {
@@ -17,6 +18,14 @@ namespace WebApiPixel.AppServices.Services
         /// </summary>
         /// <returns>Список всех сотрудников</returns>
         Task<List<EmployeeDto>> GetEmployees();
+
+        /// <summary>
+        /// Вход в аккаукнт
+        /// </summary>
+        /// <param name="login">Логин сотрудника</param>
+        /// <param name="password">Пароль сотрудника</param>
+        /// <returns></returns>
+        Task<List<EmployeeDto>> Login(string login, string password);
 
         /// <summary>
         /// Добавляет сотрудника

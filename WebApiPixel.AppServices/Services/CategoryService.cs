@@ -37,6 +37,12 @@ namespace WebApiPixel.AppServices.Services
             return result.Count > 0 ? _mapper.Map<List<CategoryDto>>(result) : new List<CategoryDto>();
         }
 
+        public async Task<CategoryDto> GetCategoryByName(string name)
+        {
+            var result = await _categoryRepository.GetAll().Where(x => x.Title == name).ToListAsync();
+            return result.Count > 0 ? _mapper.Map<CategoryDto>(result[0]) : new CategoryDto();
+        }
+
         public async Task RemoveAsync(Guid id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);

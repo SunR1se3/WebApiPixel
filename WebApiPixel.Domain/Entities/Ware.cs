@@ -18,14 +18,9 @@ namespace WebApiPixel.Domain.Entities
         public string Title { get; set; }
 
         /// <summary>
-        /// Цена
+        /// Описание услуги
         /// </summary>
-        public float Price { get; set; }
-
-        /// <summary>
-        /// Детали товара (тип бумаги, материал...)
-        /// </summary>
-        public string Details { get; set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// id категории, к которой относится товар
@@ -41,5 +36,10 @@ namespace WebApiPixel.Domain.Entities
         /// Коллекция заказов
         /// </summary>
         public virtual ICollection<Order> Orders { get; set; }
+
+        /// <summary>
+        /// Коллекция настроек
+        /// </summary>
+        public virtual ICollection<DocumentSettings> DocumentSettings { get; set; }
     }
 }
